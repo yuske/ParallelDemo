@@ -1,0 +1,20 @@
+﻿<Window x:Class="ParallelDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Primes" SizeToContent="WidthAndHeight">
+  <StackPanel Background="LightGray">
+    <TextBlock MinWidth="200" FontWeight="Bold" FontSize="32">#Primes before N(inclusively)</TextBlock>
+    <StackPanel Orientation="Horizontal">
+      <TextBlock MinWidth="150" FontSize="32">N:</TextBlock>
+      <TextBox MinWidth="300" Name="N" KeyDown="OnKeyDown" FontSize="32" HorizontalAlignment="Stretch"/>
+    </StackPanel>
+
+    <StackPanel Orientation="Horizontal">
+      <TextBlock MinWidth="150" FontSize="32">Answer:</TextBlock>
+      <TextBox MinWidth="300" IsReadOnly="True" Name="Answer" Focusable="False" FontSize="32" HorizontalAlignment="Stretch"/>
+    </StackPanel>
+
+
+
+  </StackPanel>
+</Window>
